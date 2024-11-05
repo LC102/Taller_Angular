@@ -10,11 +10,5 @@ import { HomeComponent } from "./pages/home/home.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  verPerfil(){
-    alert('Ver Perfil');
-  }
 
-  conocerMas(){
-    alert('Conocer Mas');
-  }
 }
