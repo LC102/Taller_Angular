@@ -1,14 +1,16 @@
 <div class="card">
     <div class="card-header">
-        <img [src]="image" alt="" class="image " >
+        <img [src]="productos.img" alt="" class="image " >
     </div>
     <div class="card-body">
-        <h2 class ="Title">{{title}}</h2>
-        <p class = "Info">{{info}}</p>
+        <h2 class ="Title">{{productos.name}}</h2>
+        <input type="text" class="input">
+        <p class = "Info">{{productos.description}}</p>
+        <p class = "Info">{{productos.price}}</p>
     </div>
-    <div class="card-footer">
+   <!-- <div class="card-footer">
         <button class="btn" (click)="onClick()">{{text_btn}}</button>
-    </div>
+    </div>-->
     
 </div>
 

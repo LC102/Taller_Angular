@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, signal } from '@angular/core';
+import { Productos } from '../../models/test';
 
 @Component({
   selector: 'app-card',
@@ -8,10 +9,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-@Input() image!:string;
-@Input() title!:string;
-@Input() info!:string;
-@Input() text_btn!:string;
+  text =signal('');
+@Input() productos!:Productos;
 @Input() clickEvent!:() => void;
 
 onClick(){

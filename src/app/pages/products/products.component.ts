@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
-interface Productos{
-  name:string,
-  description:string,
-  price:number,
-  img:string,
-}
+import { Productos } from '../../models/test';
+import { CardComponent } from '../../component/card/card.component';
+
 
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [],
+  imports: [CardComponent],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css'
 })
@@ -20,19 +17,19 @@ export class ProductsComponent {
       name:'Taquito',
       description:'Es un perro amigable ',
       price:0.0,
-      img:'',
+      img:'/images/product.jpg',
     },
     {
       name:'Frijol',
       description:'Perro agresivo',
       price:0.0,
-      img:'',
+      img:'/images/product_dog.jpg',
     },
     {
       name:'El sindi',
       description:'Perro sonriente',
       price:0.0,
-      img:'',
+      img:'/images/dog_pro.jpg',
     },
   ];
 }
