@@ -4,13 +4,13 @@
     </div>
     <div class="card-body">
         <h2 class ="Title">{{productos.name}}</h2>
-        <input type="text" class="input">
-        <p class = "Info">{{productos.description}}</p>
-        <p class = "Info">{{productos.price}}</p>
+        <input id="text" type="text" class="input" (change)="onChange($event)">
+        <p class = "info">{{productos.description}}</p>
+        <p class = "info">{{productos.price}}</p>
     </div>
-   <!-- <div class="card-footer">
-        <button class="btn" (click)="onClick()">{{text_btn}}</button>
-    </div>-->
+    <div class="card-footer">
+        <button class="btn" (click)="onClick()">Ver Datos</button>
+    </div>
     
 </div>
 

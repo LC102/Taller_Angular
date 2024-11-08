@@ -13,8 +13,12 @@ export class CardComponent {
 @Input() productos!:Productos;
 @Input() clickEvent!:() => void;
 
+onChange(event:any){
+  this.text.set(event.target.value);
+  this.productos.description = this.text();
+}
 onClick(){
-  this.clickEvent();
+  console.log(this.productos);
 }
 
 }
