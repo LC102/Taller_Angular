@@ -19,11 +19,18 @@ export class CardComponent {
 
 onChange(event:any){
   this.text.set(event.target.value);
+<<<<<<< HEAD
   this.data.data.description= this.text();
 }
 
 onClick(){
   console.log(this.data.data);
+=======
+  this.productos.description = this.text();
+}
+onClick(){
+  console.log(this.productos);
+>>>>>>> f60548ab053e3f95ae393bd24e8d81b7bf044c6d
 }
 
 }

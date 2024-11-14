@@ -3,17 +3,24 @@
         <img [src]="data.data" alt="" class="image " >
     </div>
     <div class="card-body">
+<<<<<<< HEAD
         <h2 class ="Title">{{data.data.name}}</h2>
         <input type="text" class="input">
         <p class = "Info">{{data.data.description}}</p>
-        @if(data.data.price){
+        <!--@if(.data.data){
             <p class=""info></p>
-        }
-        <p class = "Info">{{productos.price}}</p>
+    }-->
+        <p class = "Info">{{data.data}}</p>
+=======
+        <h2 class ="Title">{{data.data.name}}</h2>
+        <input id="text" type="text" class="input" (change)="onChange($event)">
+        <p class = "info">{{data.data.description}}</p>
+        <p class = "info">{{data.data.description}}</p>
     </div>
-   <!-- <div class="card-footer">
-        <button class="btn" (click)="onClick()">{{text_btn}}</button>
-    </div>-->
+    <div class="card-footer">
+        <button class="btn" (click)="onClick()">Ver Datos</button>
+>>>>>>> f60548ab053e3f95ae393bd24e8d81b7bf044c6d
+    </div>
     
 </div>
 
