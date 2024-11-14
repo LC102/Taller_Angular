@@ -1,11 +1,14 @@
 <div class="card">
     <div class="card-header">
-        <img [src]="productos.img" alt="" class="image " >
+        <img [src]="data.data" alt="" class="image " >
     </div>
     <div class="card-body">
-        <h2 class ="Title">{{productos.name}}</h2>
+        <h2 class ="Title">{{data.data.name}}</h2>
         <input type="text" class="input">
-        <p class = "Info">{{productos.description}}</p>
+        <p class = "Info">{{data.data.description}}</p>
+        @if(data.data.price){
+            <p class=""info></p>
+        }
         <p class = "Info">{{productos.price}}</p>
     </div>
    <!-- <div class="card-footer">
