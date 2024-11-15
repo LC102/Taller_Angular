@@ -1,9 +1,22 @@
 <!--Condicionales y bucles-->
 <div class="container">
     @for (usuario of usuarios; track usuario.id) {
-        <app-card>
-            
-        </app-card> />
+        @if(usuario.rol.rol ==="Admin"){
+           <div class="admin">
+            <div class="info">
+                <h3>{{usuario.name}}</h3>
+                <span>{{usuario.description}}</span>
+            </div>
+            <p>Es administrador</p>
+           </div>
+        }@else if(usuario.rol.rol === "Cliente"){
+            <app-card
+            [data]="usuario"
+        />
+        }@else {
+
+        }
+        
     }
 </div>
 

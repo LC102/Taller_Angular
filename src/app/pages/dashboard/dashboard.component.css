@@ -1,0 +1,17 @@
+.container{
+    background-color: rgb(122, 121, 121);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:150px;
+}
+
+.admin{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    text-align: center;
+    color: aliceblue;
+    background-color: var(--graydark);
+}

@@ -14,23 +14,16 @@ type Data = {
 })
 export class CardComponent {
   text =signal('');
-@Input() data!: Data;
+@Input() data!:Usuario;
 @Input() clickEvent!:() => void;
 
 onChange(event:any){
   this.text.set(event.target.value);
-<<<<<<< HEAD
-  this.data.data.description= this.text();
+
+  this.data.description= this.text();
 }
 
 onClick(){
-  console.log(this.data.data);
-=======
-  this.productos.description = this.text();
-}
-onClick(){
-  console.log(this.productos);
->>>>>>> f60548ab053e3f95ae393bd24e8d81b7bf044c6d
-}
-
+  console.log(this.data);
+  }
 }

@@ -10,6 +10,8 @@ export interface Productos{
 
   export interface Usuario{
     id:number,
+    img?:string,
+    price?:string,
     name:string,
     description:string,
     rol:Roles

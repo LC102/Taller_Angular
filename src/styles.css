@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --gray:#595856;
+    --dark:#262521;
+    --graydark:#403F3C;
+    --white:#F2F2F2;
+    --graywhite:#BFBFBF;
+}
 *{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
