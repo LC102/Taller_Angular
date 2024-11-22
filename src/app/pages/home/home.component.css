@@ -1,13 +1,39 @@
+.box{
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 15px;
+    h3{
+        font-size: 2.5rem;
+        font-weight: 400px;
+        text-align: center;
 
-.btn{
-    padding: 5px 10px;  
-    font-size: 14px;
-    font-weight: 500;
-    background-color:#595958;
-    color:#0e0e0e;
-    border: none;
-    border-radius: 5px;
-    &:active{
-    background-color:#F2E9E4 ;
+    }
+    input{
+        margin-top: 5px;
+        width: 90%;
+        border: none;
+        height: 45px;
+        font-size: 1.1rem;
+        padding: 15px;
+        border-radius: 25px;
+        background-color: var(--gray);
+        margin-bottom: 15px;
+    }
+    label{
+        margin: 5px 0 10px 0;
+        font-size: 1.2rem;
+        
+    }
+    .controllers{
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        font-size: 1.2rem;
+        font-weight: 500;
+        border:none;
+        border-radius: 15px;
+        padding: 5px 10px;
+        background-color: var(--graywhite);
     }
 }
